@@ -387,6 +387,5 @@ gulp.task(
 
 gulp.task(
 	'default',
-	gulp.parallel( 'styles', 'vendorsJS', 'customJS', 'images', browsersync, () => {
-	})
+	gulp.parallel( 'styles', 'vendorsJS', 'customJS', 'images')
 );
