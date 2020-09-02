@@ -50,8 +50,7 @@
     "translate": "gulp translate"
   },
   "dependencies": {
-    "@tailwindcss/ui": "^0.5.0",
-    "notify-send": "^0.1.2",
-    "tailwindcss": "^1.7.6"
+    "tailwindcss": "^1.7.6",
+    "@tailwindcss/ui": "^0.5.0"
   }
 }
