@@ -1,13 +1,5 @@
 <?php get_header(); ?>
-
-
-<body class="antialiased" x-data="{ 
-  openRegistration: false,
-  phase: new URLSearchParams(location.search).get('phase'),
-  cookied: new URLSearchParams(location.search).get('cookied'),
-  unbranded: new URLSearchParams(location.search).get('unbranded')
-}">
-  <div class="relative bg-gray-200">
+<div class="relative bg-gray-200">
     <!-- banner -->
     <div id="banner" class="bg-pkl-600" x-bind:data-phase="phase">
       <div class="max-w-screen-xl mx-auto py-3 px-3">
@@ -44,7 +36,7 @@
           </svg>
           <main class="py-10 mx-auto max-w-screen-xl px-4 sm:py-12 sm:px-6 md:py-16 lg:py-20 lg:px-8 xl:py-28">
             <div class="sm:text-center lg:text-left">
-              <img x-bind:data-unbranded="unbranded" id="branding" class="lg:max-w-md" src="images/benefits-from-the-heart.svg" alt="Parkland: Benefits from the heart">
+              <img x-bind:data-unbranded="unbranded" id="branding" class="lg:max-w-md" src="<?= get_template_directory_uri() ?>/img/benefits-from-the-heart.svg" alt="Parkland: Benefits from the heart">
               <h2 x-bind:data-unbranded="unbranded" id="unbranded" class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 Benefits 
                 <br>
@@ -58,7 +50,7 @@
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="images/hero.jpg" alt="">
+        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="<?= get_template_directory_uri() ?>/img/hero.jpg" alt="">
       </div>
     </div>
     <!-- features -->
@@ -214,7 +206,7 @@
           <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
               <div class="py-8 px-6 text-left bg-white lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-                <img class="block max-w-sm" src="images/otm.svg" alt="Office of Talent Management" srcset="">
+                <img class="block max-w-sm" src="<?= get_template_directory_uri() ?>/img/otm.svg" alt="Office of Talent Management" srcset="">
                 <p class="mt-2 text-base leading-6 text-gray-500">
                   People first, for the health of our community
                 </p>
@@ -247,8 +239,4 @@
       </div>
     </div>
   </div>
-</body>
-
-<?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
