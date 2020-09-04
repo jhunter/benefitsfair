@@ -16,8 +16,8 @@ Template Name: Exhibit Hall
             </a>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <a href="/exhibithall.html" class="px-3 py-5 text-sm font-medium text-white hover:text-white border-b-2 focus:bg-teal-700 focus:outline-none transition duration-150 ease-in-out">Exhibit Hall</a>
-                <a href="/calendar.html" class="px-3 py-2 border border-teal-300 text-sm leading-4 font-medium rounded-md text-teal-800 bg-white hover:text-teal-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150">Event Calendar</a>
+                <a href="<?= site_url() ?>/exhibit-hall" class="px-3 py-5 text-sm font-medium text-white hover:text-white border-b-2 focus:bg-teal-700 focus:outline-none transition duration-150 ease-in-out">Exhibit Hall</a>
+                <a href="<?= site_url() ?>/event-calendar" class="px-3 py-2 border border-teal-300 text-sm leading-4 font-medium rounded-md text-teal-800 bg-white hover:text-teal-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150">Event Calendar</a>
               </div>
             </div>
             <div class="-mr-2 flex md:hidden">
@@ -411,7 +411,7 @@ Template Name: Exhibit Hall
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
-                <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="images/parkland-icon.svg" alt="">
+                <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/parkland-icon.svg" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
                     <h3 class="text-gray-900 text-lg leading-5 font-medium">2021 Open Enrollment</h3>
@@ -472,7 +472,7 @@ Template Name: Exhibit Hall
       <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
           <div class="py-8 px-6 text-left bg-white lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-            <img class="block max-w-sm" src="images/otm.svg" alt="Office of Talent Management" srcset="">
+            <img class="block max-w-sm" src="<?= get_template_directory_uri() ?>/img/otm.svg" alt="Office of Talent Management" srcset="">
             <p class="mt-2 text-base leading-6 text-gray-500">
               People first, for the health of our community
             </p>
