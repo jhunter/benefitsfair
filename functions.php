@@ -354,7 +354,7 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-// add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_vendor'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -405,25 +405,25 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+function create_post_type_vendor()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_taxonomy_for_object_type('category', 'vendor'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'vendor');
+    register_post_type('vendor', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('Vendors', 'vendor'), // Rename these to suit
+            'singular_name' => __('Vendor', 'vendor'),
+            'add_new' => __('Add New', 'vendor'),
+            'add_new_item' => __('Add New Vendor', 'vendor'),
+            'edit' => __('Edit', 'vendor'),
+            'edit_item' => __('Edit Vendor', 'vendor'),
+            'new_item' => __('New Vendor', 'vendor'),
+            'view' => __('View Vendor', 'vendor'),
+            'view_item' => __('View Vendor', 'vendor'),
+            'search_items' => __('Search Vendors', 'vendor'),
+            'not_found' => __('No Vendor found', 'vendor'),
+            'not_found_in_trash' => __('No Vendors found in Trash', 'vendor')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -438,9 +438,41 @@ function create_post_type_html5()
         'taxonomies' => array(
             'post_tag',
             'category'
-        ) // Add Category and Post Tags support
+        ), // Add Category and Post Tags support
+        'menu_icon'           => 'dashicons-store',
     ));
 }
+
+/**
+ * Remove the slug from published post permalinks. Only affect our CPT though.
+ */
+function vipx_remove_cpt_slug( $post_link, $post, $leavename ) {
+ 
+    if ( ! in_array( $post->post_type, array( 'vendor' ) ) || 'publish' != $post->post_status )
+        return $post_link;
+ 
+    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+ 
+    return $post_link;
+}
+add_filter( 'post_type_link', 'vipx_remove_cpt_slug', 10, 3 );
+ 
+function vipx_parse_request_tricksy( $query ) {
+ 
+    // Only noop the main query
+    if ( ! $query->is_main_query() )
+        return;
+ 
+    // Only noop our very specific rewrite rule match
+    if ( 2 != count( $query->query )
+        || ! isset( $query->query['page'] ) )
+        return;
+ 
+    // 'name' will be set if post permalinks are just post_name, otherwise the page rule will match
+    if ( ! empty( $query->query['name'] ) )
+        $query->set( 'post_type', array( 'post', 'vendor', 'page' ) );
+}
+add_action( 'pre_get_posts', 'vipx_parse_request_tricksy' );
 
 /*------------------------------------*\
 	ShortCode Functions

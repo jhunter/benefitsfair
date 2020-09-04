@@ -73,7 +73,7 @@ Template Name: Exhibit Hall
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/umr.png" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -89,7 +89,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/medimpact.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -105,7 +105,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/cigna.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -121,7 +121,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/superiorvision.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -137,7 +137,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/amwins.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -166,7 +166,7 @@ Template Name: Exhibit Hall
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/securian.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -182,7 +182,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/sedgwick.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -211,7 +211,7 @@ Template Name: Exhibit Hall
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/payflex.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -227,7 +227,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/payflex.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -256,7 +256,7 @@ Template Name: Exhibit Hall
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/compsych.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -272,7 +272,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/milliman.png" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -301,7 +301,7 @@ Template Name: Exhibit Hall
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/aflac.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -317,7 +317,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/araglegalcenter.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -333,7 +333,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/nationwide.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -349,7 +349,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/travelers.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -365,7 +365,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/beneplace.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -381,7 +381,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/beneplace.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -410,7 +410,7 @@ Template Name: Exhibit Hall
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/parkland-icon.svg" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -426,7 +426,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/mmcu.com" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
@@ -442,7 +442,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="/booth.html" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group block w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/istandforparkland.org" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">

@@ -12,7 +12,7 @@ Template Name: Event Calendar
         <div class="border-b border-pkl-700">
           <div class="-mb-px flex items-center justify-between h-16 px-4 sm:px-0">
             <a href="/index.html" class="flex-shrink-0 text-white font-bold">
-              <img class="w-32" src="images/parkland.svg" alt="Parkland">
+              <img class="w-32" src="<?= get_template_directory_uri() ?>/img/parkland.svg" alt="Parkland">
             </a>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
@@ -66,7 +66,7 @@ Template Name: Event Calendar
 
       <div class="bg-white shadow overflow-hidden sm:rounded-lg">
         <div class="px-4 sm:px-6 py-5 border-b border-gray-200 flex items-center flex-wrap sm:space-x-4">
-          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="/images/umr.png" alt="">
+          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="<?= get_template_directory_uri() ?>/img/umr.png" alt="">
           <div class="flex-1 ml-4 sm:ml-0">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
               Care Management
@@ -116,7 +116,7 @@ Template Name: Event Calendar
       </div>
       <div class="bg-white shadow overflow-hidden sm:rounded-lg">
         <div class="px-4 sm:px-6 py-5 border-b border-gray-200 flex items-center flex-wrap sm:space-x-4">
-          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="/images/umr.png" alt="">
+          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="<?= get_template_directory_uri() ?>/img/umr.png" alt="">
           <div class="flex-1 ml-4 sm:ml-0">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
               Medical Overview
@@ -166,7 +166,7 @@ Template Name: Event Calendar
       </div>
       <div class="bg-white shadow overflow-hidden sm:rounded-lg">
         <div class="px-4 sm:px-6 py-5 border-b border-gray-200 flex items-center flex-wrap sm:space-x-4">
-          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="/images/milliman.png" alt="">
+          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="<?= get_template_directory_uri() ?>/img/milliman.png" alt="">
           <div class="flex-1 ml-4 sm:ml-0">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
               Retirement Program Overview
@@ -226,7 +226,7 @@ Template Name: Event Calendar
       <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
           <div class="py-8 px-6 text-left bg-white lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-            <img class="block max-w-sm" src="images/otm.svg" alt="Office of Talent Management" srcset="">
+            <img class="block max-w-sm" src="<?= get_template_directory_uri() ?>/img/otm.svg" alt="Office of Talent Management" srcset="">
             <p class="mt-2 text-base leading-6 text-gray-500">
               People first, for the health of our community
             </p>
