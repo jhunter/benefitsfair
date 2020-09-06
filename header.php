@@ -24,6 +24,7 @@
 
 	</head>
 	<body <?php body_class(); ?> class="antialiased" x-data="{ 
+	  openModal: false,
 	  openRegistration: false,
 	  phase: new URLSearchParams(location.search).get('phase'),
 	  cookied: new URLSearchParams(location.search).get('cookied'),

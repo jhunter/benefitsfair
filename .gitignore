@@ -101,3 +101,4 @@ typings/
 
 # TernJS port file
 .tern-port
+assets/src/tailwind.css
