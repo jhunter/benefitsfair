@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="<?= get_template_directory_uri() ?>/img/hero.jpg" alt="">
+        <div class="h-56 w-full bg-cover bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/hero.jpg)"></div>
       </div>
     </div>
     <!-- features -->

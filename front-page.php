@@ -50,14 +50,14 @@
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="<?= get_template_directory_uri() ?>/img/hero.jpg" alt="">
+        <div class="h-56 w-full bg-cover bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/hero.jpg)"></div>
       </div>
     </div>
     <!-- features -->
     <div class="pt-16 bg-gray-50 lg:pt-32">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <div class="relative lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center space-y-10 lg:space-y-0">
-          <div class="relative">
+        <div class="relative lg:flex lg:space-x-16 lg:items-center space-y-10 lg:space-y-0">
+          <div class="relative lg:flex-1">
             <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
               24/7 Benefits Info
             </h4>
@@ -126,7 +126,7 @@
               </li>
             </ul>
           </div>
-          <div class="relative">
+          <div class="relative lg:flex-1">
             <div class="rounded-lg shadow-lg bg-white p-4 sm:p-6 lg:px-8 lg:py-16">
               <div class="flex flex-col items-baseline max-w-lg mx-auto lg:max-w-none">
                 <h4 x-text="cookied ? 'Welcome Back' : 'Register Your Attendence'" class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
@@ -138,7 +138,7 @@
                 <a x-show="cookied" href="<?= site_url()?>/exhibit-hall" class="inline-flex justify-center mt-6 py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pkl-600 hover:bg-pkl-500 focus:outline-none focus:border-pkl-700 focus:shadow-outline-pkl active:bg-pkl-700 transition duration-150 ease-in-out">
                   Log In
                 </a>
-                <form x-show="!cookied" action="#" method="POST" class="w-full grid grid-cols-1 row-gap-6 mt-4">
+                <form x-show="!cookied" action="#" method="POST" class="w-full flex flex-col space-y-6 mt-4">
                   <div class="flex space-x-3">
                     <div class="flex-1">
                       <label for="first_name" class="sr-only">First Name</label>
