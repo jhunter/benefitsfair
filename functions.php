@@ -102,6 +102,9 @@ function html5blank_header_scripts()
         // wp_enqueue_script('html5blankscripts'); // Enqueue it!
         wp_register_script('alpine','https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('alpine'); // Enqueue it!
+
+        wp_register_script('alpineIE11','https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('alpineIE11'); // Enqueue it!
     }
 }
 
