@@ -55,7 +55,7 @@ Template Name: Exhibit Hall
           Exhibit Hall
         </h1>
         <p class="mt-3 max-w-xl text-lg leading-6 text-gray-300">
-          Varius, lorem gravida maximus posuere, ipsum eros fermentum lectus, eu malesuada ex ex ac velit.
+          Browse these vendor booths to learn more about your benefits.
         </p>
       </div>
     </header>

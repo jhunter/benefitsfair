@@ -63,7 +63,7 @@ Template Name: Event Calendar
                     Event Calendar
                   </h1>
                   <p class="mt-3 max-w-xl text-lg leading-6 text-gray-300">
-                    Varius, lorem gravida maximus posuere, ipsum eros fermentum lectus, eu malesuada ex ex ac velit.
+                    Sign up to attend a webinar led by benefit representatives.
                   </p>
                 </div>
               </div>
