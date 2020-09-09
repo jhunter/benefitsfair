@@ -9,3 +9,8 @@
   0 0 2rem rgba(0,0,0,0.5), 
   0 0 4rem rgba(0,0,0,0.5);
 }
+
+.aspect-ratio-16\/9 {
+  padding-bottom: 56.25%;
+  padding-bottom: calc(100% / 16 * 9);
+}

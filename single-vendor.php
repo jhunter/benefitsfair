@@ -136,7 +136,7 @@ Template Post Type: vendor
       class="bg-gray-100 shadow overflow-hidden rounded-lg">
         <div id="tabs">
           <div class="sm:hidden">
-            <select aria-label="Selected tab" class="form-select block w-full">
+            <select x-model="openTab" aria-label="Selected tab" class="form-select block w-full">
               <option selected>Events</option>
               <option>Handouts</option>
               <option>Videos</option>
@@ -165,7 +165,7 @@ Template Post Type: vendor
           <div x-show="openTab === 'Events'" class="space-y-8">
             <div class="bg-white shadow overflow-hidden sm:rounded-lg">
               <div class="px-4 sm:px-6 py-5 border-b border-gray-200 flex items-center flex-wrap sm:space-x-4">
-                <div class="flex-1 ml-4 sm:ml-0">
+                <div class="flex-1 sm:ml-0">
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Retirement Program Overview
                   </h3>
@@ -175,8 +175,8 @@ Template Post Type: vendor
                 </div>
               </div>
               <div class="px-4 py-5 sm:p-0">
-                <dl>
-                  <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
+                <dl class="space-y-8 sm:space-y-0">
+                  <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
                     <dt class="text-sm leading-5 font-medium text-gray-500">
                       Description
                     </dt>
@@ -214,7 +214,7 @@ Template Post Type: vendor
             </div>
             <div class="bg-white shadow overflow-hidden sm:rounded-lg">
               <div class="px-4 sm:px-6 py-5 border-b border-gray-200 flex items-center flex-wrap sm:space-x-4">
-                <div class="flex-1 ml-4 sm:ml-0">
+                <div class="flex-1 sm:ml-0">
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Retirement Program Overview
                   </h3>
@@ -224,8 +224,8 @@ Template Post Type: vendor
                 </div>
               </div>
               <div class="px-4 py-5 sm:p-0">
-                <dl>
-                  <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
+                <dl class="space-y-8 sm:space-y-0">
+                  <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
                     <dt class="text-sm leading-5 font-medium text-gray-500">
                       Description
                     </dt>
@@ -247,7 +247,7 @@ Template Post Type: vendor
                           Register
                         </a>
                         </li>
-                        <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm leading-5">
+                        <li class="p-4 flex items-center justify-between text-sm leading-5">
                           <div class="w-0 flex-1 flex items-center">
                             Nov 2 - 4:00 PM
                           </div>
@@ -262,8 +262,118 @@ Template Post Type: vendor
               </div>
             </div>
           </div>
-          <div x-show="openTab === 'Handouts'"></div>
-          <div x-show="openTab === 'Videos'"></div>
+          <div x-show="openTab === 'Handouts'">
+            <ul class="border border-gray-200 divide-y divide-gray-200 bg-white shadow overflow-hidden sm:rounded-lg">
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Retirement Plans Overview
+                  </h3>
+                </div>
+                <a href="<?= get_template_directory_uri() ?>/documents/milliman-roth-flyer.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                Download
+              </a>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Rollover Flyer
+                  </h3>
+                </div>
+                <a href="<?= get_template_directory_uri() ?>/documents/milliman-rollover-flyer.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                Download
+              </a>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Roth Flyer
+                  </h3>
+                </div>
+                <a href="<?= get_template_directory_uri() ?>/documents/milliman-retirement-plans-overview.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                Download
+              </a>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Plan Distribution Options
+                  </h3>
+                </div>
+                <a href="<?= get_template_directory_uri() ?>/documents/milliman-plan-distribution-options.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                Download
+              </a>
+              </li>
+            </ul>
+          </div>
+          <div x-show="openTab === 'Videos'" @custom-event="console.log($event.detail.showVideoModal)">
+            <ul class="border border-gray-200 divide-y divide-gray-200 bg-white shadow overflow-hidden sm:rounded-lg">
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Market Volatility (1:36)
+                  </h3>
+                </div>
+                <button class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150"  
+                  x-on:click="
+                    showVideoModal = true;
+                    console.log(showVideoModal);
+                  "
+                >
+                  Watch
+                </button>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Automatic Increase: How-To (2:19)
+                  </h3>
+                </div>
+                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                  Watch
+                </button>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Beneficiary: How-To (2:07)
+                  </h3>
+                </div>
+                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                  Watch
+                </button>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Rollover: How-To (2:59)
+                  </h3>
+                </div>
+                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                  Watch
+                </button>
+              </li>
+              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                <div class="flex-1 flex space-x-2">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
+                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    Roth After-tax Saving (1:11)
+                  </h3>
+                </div>
+                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                  Watch
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -383,6 +493,20 @@ Template Post Type: vendor
     </div>
     <div class="p-4 sm:p-6 bg-gray-50 border-t-2 border-gray-200">
       <p class="text-xs leading-5 text-gray-500">Please do not include personal details in your message, such as Social Security number. This email is only active during Live Virtual Benefits Fair days. This email is only active during Live Virtual Benefits Fair days.</p>
+    </div>
+  </div>
+</div>
+<!-- video modal -->
+<div class="fixed inset-0 px-4 pb-6 sm:p-0 sm:flex sm:items-center sm:justify-center z-50" x-show="showVideoModal" x-cloak>
+  <div class="fixed inset-0 transition-opacity">
+    <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+  </div>
+  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-4xl sm:w-full" role="dialog" aria-modal="true" @click.away="showVideoModal = false">
+    <div class="p-4 sm:p-6 ">
+      <div class="relative">
+        <div class="aspect-ratio-16/9"></div>
+        <iframe src="https://www.youtube-nocookie.com/embed/ubUqtN9Kl4E" class="absolute left-0 top-0 w-full h-full" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>
