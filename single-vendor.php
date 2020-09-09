@@ -194,7 +194,7 @@ Template Post Type: vendor
                           <div class="w-0 flex-1 flex items-center">
                             Nov 1 - 3:00 PM
                           </div>
-                          <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                          <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                           Register
                         </a>
                         </li>
@@ -202,7 +202,7 @@ Template Post Type: vendor
                           <div class="w-0 flex-1 flex items-center">
                             Nov 2 - 4:00 PM
                           </div>
-                          <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                          <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                           Register
                         </a>
                         </li>
@@ -243,7 +243,7 @@ Template Post Type: vendor
                           <div class="w-0 flex-1 flex items-center">
                             Nov 1 - 3:00 PM
                           </div>
-                          <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                          <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                           Register
                         </a>
                         </li>
@@ -251,7 +251,7 @@ Template Post Type: vendor
                           <div class="w-0 flex-1 flex items-center">
                             Nov 2 - 4:00 PM
                           </div>
-                          <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                          <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                           Register
                         </a>
                         </li>
