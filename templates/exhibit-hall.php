@@ -55,7 +55,7 @@ Template Name: Exhibit Hall
           Exhibit Hall
         </h1>
         <p class="mt-3 max-w-xl text-lg leading-6 text-gray-300">
-          Varius, lorem gravida maximus posuere, ipsum eros fermentum lectus, eu malesuada ex ex ac velit.
+          Browse these vendor booths to learn more about your benefits.
         </p>
       </div>
     </header>
@@ -65,12 +65,12 @@ Template Name: Exhibit Hall
     <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 space-y-8">
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/1641857584.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1641857584.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Health Benefits
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -158,12 +158,12 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-793872274.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-793872274.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Protecting You &amp; Your Family
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -203,12 +203,12 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-751465522.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-751465522.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Flexible Spending Accounts
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -248,12 +248,12 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-1091044655.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-1091044655.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Well-Being
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -293,12 +293,12 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-669130018.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-669130018.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Voluntary Benefits (Beneplace)
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -349,7 +349,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="<?= site_url() ?>/double-vendor" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page/?double=true" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <div class="flex relative overflow-hidden my-2 flex-shrink-0 -space-x-4">
                   <img class="relative inline-block w-12 h-12 rounded-full text-white group-hover:text-blue-50 shadow-solid border border-gray-300 object-cover" src="https://logo.clearbit.com/travelers.com" alt="">
                   <img class="relative inline-block w-12 h-12 rounded-full text-white group-hover:text-blue-50 shadow-solid border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/libertymutual.jpg" alt="">
@@ -405,12 +405,12 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/1683310141.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1683310141.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Parkland Benefits
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">

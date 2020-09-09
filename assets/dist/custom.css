@@ -2,28 +2,6 @@
     visibility: hidden;
   }
 
-#banner[data-phase="evergreen"]{
-  display: none;
-}
-
-#register[data-cookied="true"],
-#welcomeback{
-  display: none;
-}
-
-#welcomeback[data-cookied="true"] {
-  display: block;
-}
-
-#branding[data-unbranded="true"],
-#unbranded{
-  display: none;
-}
-
-#unbranded[data-unbranded="true"]{
-  display: inline;
-}
-
 .text-shadow {
   text-shadow: 
   0 0 1px rgba(0,0,0,.5), 
@@ -32,6 +10,7 @@
   0 0 4rem rgba(0,0,0,0.5);
 }
 
-.min-h-260 {
-  min-height: 260px;
+.aspect-ratio-16\/9 {
+  padding-bottom: 56.25%;
+  padding-bottom: calc(100% / 16 * 9);
 }

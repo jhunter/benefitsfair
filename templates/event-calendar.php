@@ -63,7 +63,7 @@ Template Name: Event Calendar
                     Event Calendar
                   </h1>
                   <p class="mt-3 max-w-xl text-lg leading-6 text-gray-300">
-                    Varius, lorem gravida maximus posuere, ipsum eros fermentum lectus, eu malesuada ex ex ac velit.
+                    Sign up to attend a webinar led by benefit representatives.
                   </p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ Template Name: Event Calendar
           </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-          <img class="h-56 w-full object-cover object-left sm:h-72 md:h-96 lg:w-full lg:h-full" src="<?= get_template_directory_uri() ?>/img/1681615609.jpg" alt="">
+          <div class="h-56 w-full bg-cover bg-center object-left sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1681615609.jpg)"></div>
         </div>
       </div>
   </div>
@@ -111,7 +111,7 @@ Template Name: Event Calendar
                     <div class="w-0 flex-1 flex items-center">
                       Nov 1 - 3:00 PM
                     </div>
-                    <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                    <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                     Register
                   </a>
                   </li>
@@ -119,7 +119,7 @@ Template Name: Event Calendar
                     <div class="w-0 flex-1 flex items-center">
                       Nov 2 - 4:00 PM
                     </div>
-                    <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                    <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                     Register
                   </a>
                   </li>
@@ -161,7 +161,7 @@ Template Name: Event Calendar
                     <div class="w-0 flex-1 flex items-center">
                       Nov 1 - 3:00 PM
                     </div>
-                    <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                    <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                     Register
                   </a>
                   </li>
@@ -169,7 +169,7 @@ Template Name: Event Calendar
                     <div class="w-0 flex-1 flex items-center">
                       Nov 2 - 4:00 PM
                     </div>
-                    <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                    <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                     Register
                   </a>
                   </li>
@@ -211,7 +211,7 @@ Template Name: Event Calendar
                     <div class="w-0 flex-1 flex items-center">
                       Nov 1 - 3:00 PM
                     </div>
-                    <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                    <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                     Register
                   </a>
                   </li>
@@ -219,7 +219,7 @@ Template Name: Event Calendar
                     <div class="w-0 flex-1 flex items-center">
                       Nov 2 - 4:00 PM
                     </div>
-                    <a href="#" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                    <a href="https://global.gotowebinar.com/" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                     Register
                   </a>
                   </li>
