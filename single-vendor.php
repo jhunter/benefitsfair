@@ -493,7 +493,7 @@ Template Post Type: vendor
       </div>
     </div>
     <div class="p-4 sm:p-6 bg-gray-50 border-t-2 border-gray-200">
-      <p class="text-xs leading-5 text-gray-500">Please do not include personal details in your message, such as Social Security number. This email is only active during Live Virtual Benefits Fair days. This email is only active during Live Virtual Benefits Fair days.</p>
+      <p class="text-xs leading-5 text-gray-500">Please do not include personal details in your message, such as Social Security number. This email is only active during live Virtual Benefits Fair days.</p>
     </div>
   </div>
 </div>

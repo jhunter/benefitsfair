@@ -85,7 +85,7 @@
                   <div class="ml-4">
                     <p class="text-lg leading-6 text-gray-600">
                       <strong class="font-bold text-gray-900">Ask questions</strong>
-                      about your benefits ― representatives will email you back with answers. 
+                      about your benefits ― representatives will email you back with answers within one business day. 
                     </p>
                   </div>
                 </div>
