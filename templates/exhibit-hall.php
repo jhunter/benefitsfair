@@ -70,7 +70,7 @@ Template Name: Exhibit Hall
             Health Benefits
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -163,7 +163,7 @@ Template Name: Exhibit Hall
             Protecting You &amp; Your Family
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -208,7 +208,7 @@ Template Name: Exhibit Hall
             Flexible Spending Accounts
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -253,7 +253,7 @@ Template Name: Exhibit Hall
             Well-Being
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -298,7 +298,7 @@ Template Name: Exhibit Hall
             Voluntary Benefits (Beneplace)
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
@@ -410,7 +410,7 @@ Template Name: Exhibit Hall
             Parkland Benefits
           </h3>
         </div>
-        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-260">
+        <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
           <ul class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
