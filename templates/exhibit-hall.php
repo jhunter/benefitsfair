@@ -349,7 +349,7 @@ Template Name: Exhibit Hall
               </a>
             </li>
             <li class="col-span-1">
-              <a href="<?= site_url() ?>/double-vendor" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+              <a href="<?= site_url() ?>/test-vendor-page/?double=true" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <div class="flex relative overflow-hidden my-2 flex-shrink-0 -space-x-4">
                   <img class="relative inline-block w-12 h-12 rounded-full text-white group-hover:text-blue-50 shadow-solid border border-gray-300 object-cover" src="https://logo.clearbit.com/travelers.com" alt="">
                   <img class="relative inline-block w-12 h-12 rounded-full text-white group-hover:text-blue-50 shadow-solid border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/libertymutual.jpg" alt="">
