@@ -37,11 +37,6 @@
           <main class="py-10 mx-auto max-w-screen-xl px-4 sm:py-12 sm:px-6 md:py-16 lg:py-20 lg:px-8 xl:py-28">
             <div class="sm:text-center lg:text-left">
               <img x-bind:data-unbranded="unbranded" id="branding" class="lg:max-w-md" src="<?= get_template_directory_uri() ?>/img/benefits-from-the-heart.svg" alt="Parkland: Benefits from the heart">
-              <h2 x-bind:data-unbranded="unbranded" id="unbranded" class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                Benefits 
-                <br>
-                <span class="text-pkl-600">from the heart</span>
-              </h2>
               <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Take a stroll through the Virtual Benefits Fair
               </p>
