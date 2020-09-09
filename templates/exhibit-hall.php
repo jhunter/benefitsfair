@@ -65,7 +65,7 @@ Template Name: Exhibit Hall
     <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 space-y-8">
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/1641857584.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1641857584.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Health Benefits
           </h3>
@@ -158,7 +158,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-793872274.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-793872274.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Protecting You &amp; Your Family
           </h3>
@@ -203,7 +203,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-751465522.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-751465522.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Flexible Spending Accounts
           </h3>
@@ -248,7 +248,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-1091044655.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-1091044655.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Well-Being
           </h3>
@@ -293,7 +293,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/md-669130018.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-669130018.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Voluntary Benefits (Beneplace)
           </h3>
@@ -405,7 +405,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <img alt="..." src="<?= get_template_directory_uri() ?>/img/1683310141.jpg" class="hidden md:block absolute object-cover inset-0 w-full h-full">
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1683310141.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Parkland Benefits
           </h3>

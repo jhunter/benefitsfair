@@ -118,7 +118,8 @@ Template Post Type: vendor
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="<?= get_template_directory_uri() ?>/img/lg-1091044655.jpg" alt="">
+        <div x-show="!double" class="h-56 w-full bg-cover bg-center object-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/lg-1091044655.jpg)"></div>
+        <div x-show="double" class="h-56 w-full bg-cover bg-center object-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-669130018.jpg)"></div>
       </div>
     </div>
   </div>
@@ -445,7 +446,7 @@ Template Post Type: vendor
       From: "opacity-100 translate-y-0 sm:scale-100"
       To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
   -->
-  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-md sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline" @click.away="openModal = false">
+  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-md sm:w-full z-50" role="dialog" aria-modal="true" aria-labelledby="modal-headline" @click.away="openModal = false">
     <div class="p-4 sm:p-6 ">
       <div class="text-center">
         <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
@@ -454,7 +455,7 @@ Template Post Type: vendor
         <p class="mt-4 text-base leading-6 text-gray-500">
           Representatives will answer your general plan questions within one business day.
         </p>
-        <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 mt-4">
+        <form action="#" method="POST" class="flex flex-col space-y-6 mt-4">
           <div class="flex space-x-3">
             <div class="flex-1">
               <label for="first_name" class="sr-only">First Name</label>
