@@ -138,7 +138,7 @@
                 <a x-show="cookied" href="<?= site_url()?>/exhibit-hall" class="inline-flex justify-center mt-6 py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pkl-600 hover:bg-pkl-500 focus:outline-none focus:border-pkl-700 focus:shadow-outline-pkl active:bg-pkl-700 transition duration-150 ease-in-out">
                   Log In
                 </a>
-                <form x-show="!cookied" action="#" method="POST" class="w-full grid grid-cols-1 row-gap-6 mt-4">
+                <form x-show="!cookied" action="#" method="POST" class="w-full grid grid-cols-1 gap-y-6 mt-4">
                   <div class="flex space-x-3">
                     <div class="flex-1">
                       <label for="first_name" class="sr-only">First Name</label>
