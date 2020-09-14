@@ -446,6 +446,22 @@ Template Name: Exhibit Hall
             </li>
             <li class="col-span-1">
               <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+                <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= get_template_directory_uri() ?>/img/parkland-icon.svg" alt="">
+                <div class="flex-1">
+                  <div class="flex items-center space-x-3">
+                    <h3 class="text-gray-900 text-lg leading-5 font-medium">Parkland Nicotine-Free Campus</h3>
+                  </div>
+                  <p class="mt-1 text-gray-500 text-sm leading-5">Parkland</p>
+                </div>
+                <div>
+                  <svg class="h-5 w-5 text-gray-400 group-hover:text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="col-span-1">
+              <a href="<?= site_url() ?>/test-vendor-page" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                 <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="https://logo.clearbit.com/istandforparkland.org" alt="">
                 <div class="flex-1">
                   <div class="flex items-center space-x-3">
