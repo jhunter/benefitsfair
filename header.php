@@ -27,6 +27,7 @@
 	  openModal: false,
 	  openRegistration: false,
 	  showVideoModal: false,
+	  newhero: new URLSearchParams(location.search).get('newhero'),
 	  double: new URLSearchParams(location.search).get('double'),
 	  phase: new URLSearchParams(location.search).get('phase'),
 	  cookied: new URLSearchParams(location.search).get('cookied'),

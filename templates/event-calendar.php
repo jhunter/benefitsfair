@@ -71,7 +71,8 @@ Template Name: Event Calendar
           </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-          <div class="h-56 w-full bg-cover bg-center object-left sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1681615609.jpg)"></div>
+          <div x-show="newhero" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/lg-1517141402.jpg)"></div>
+          <div x-show="!newhero" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1681615609.jpg)"></div>
         </div>
       </div>
   </div>

@@ -248,7 +248,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-1091044655.jpg)"></div>
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1683310141.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Well-Being
           </h3>
@@ -405,7 +405,7 @@ Template Name: Exhibit Hall
 
       <div class="bg-gray-100 shadow overflow-hidden rounded-lg md:flex">
         <div class="md:w-1/3 relative px-4 py-5 border-b md:border-none border-gray-200 bg-gray-900 sm:px-6 flex items-end overflow-hidden">
-          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1683310141.jpg)"></div>
+          <div class="hidden md:block absolute bg-cover bg-center inset-0 w-full h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-pklbenefits.jpg)"></div>
           <h3 class="relative md:w-64 md:ml-auto text-4xl leading-9 font-black md:text-right text-white text-shadow">
             Parkland Benefits
           </h3>

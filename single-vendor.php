@@ -118,8 +118,8 @@ Template Post Type: vendor
         </div>
       </div>
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-        <div x-show="!double" class="h-56 w-full bg-cover bg-center object-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/lg-1091044655.jpg)"></div>
-        <div x-show="double" class="h-56 w-full bg-cover bg-center object-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/md-669130018.jpg)"></div>
+        <div x-show="!double" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1683310141.jpg)"></div>
+        <div x-show="double" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/lg-669130018.jpg)"></div>
       </div>
     </div>
   </div>
