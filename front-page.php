@@ -200,14 +200,14 @@
         <div class="relative">
           <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
           <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white max-w-lg py-8 px-6 lg:p-12 space-y-8 lg:space-y-0 lg:space-x-8 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
+            <div class="bg-white max-w-lg py-8 px-6 lg:p-12 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
               <div class="text-left lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center">
                 <img class="block max-w-full w-64" src="<?= get_template_directory_uri() ?>/img/otm.svg" alt="Office of Talent Management" srcset="">
                 <p class="mt-2 text-base leading-6 text-gray-500">
                   People first, for the health of our community
                 </p>
               </div>
-              <div class="lg:flex-1">
+              <div class="lg:flex-1 mt-8 lg:mt-0 lg:ml-8">
                 <div class="flex items-center">
                   <h4 class="flex-shrink-0 pr-4 text-sm leading-5 tracking-wider font-semibold uppercase text-blue-600">
                     For Enrollment Help

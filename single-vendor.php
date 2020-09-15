@@ -387,7 +387,7 @@ Template Post Type: vendor
               People first, for the health of our community
             </p>
           </div>
-          <div class="lg:flex-1">
+          <div class="lg:flex-1 mt-8 lg:mt-0 lg:ml-8">
             <div class="flex items-center">
               <h4 class="flex-shrink-0 pr-4 text-sm leading-5 tracking-wider font-semibold uppercase text-blue-600">
                 For Enrollment Help
