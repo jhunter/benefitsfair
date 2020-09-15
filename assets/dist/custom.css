@@ -14,3 +14,9 @@
   padding-bottom: 56.25%;
   padding-bottom: calc(100% / 16 * 9);
 }
+
+@media (min-width: 1024px) {
+  .lg\:flex-vendor {
+    flex: 0 1 calc(50% - 0.75rem);
+  }
+}
