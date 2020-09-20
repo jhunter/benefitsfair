@@ -26,31 +26,10 @@
 	<body <?php body_class(); ?> class="antialiased" x-data="{ 
 	  openModal: false,
 	  openRegistration: false,
+	  showVideoModal: false,
+	  newhero: new URLSearchParams(location.search).get('newhero'),
+	  double: new URLSearchParams(location.search).get('double'),
 	  phase: new URLSearchParams(location.search).get('phase'),
 	  cookied: new URLSearchParams(location.search).get('cookied'),
 	  unbranded: new URLSearchParams(location.search).get('unbranded')
 	}">
-
-		<!-- wrapper -->
-		<!-- <div class="wrapper"> -->
-
-			<!-- header -->
-			<!-- <header class="header clear" role="banner"> -->
-
-					<!-- logo -->
-					<!-- <div class="logo"> -->
-						<!-- <a href="<?php echo home_url(); ?>"> -->
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img"> -->
-						<!-- </a> -->
-					<!-- </div> -->
-					<!-- /logo -->
-
-					<!-- nav -->
-					<!-- <nav class="nav" role="navigation"> -->
-						<!-- <?php html5blank_nav(); ?> -->
-					<!-- </nav> -->
-					<!-- /nav -->
-
-			<!-- </header> -->
-			<!-- /header -->
