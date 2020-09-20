@@ -1,7 +1,7 @@
 module.exports = {
   // target: 'ie11',
   future: {
-    removeDeprecatedGapUtilities: true,
+    // removeDeprecatedGapUtilities: true,
   },
   theme: {
     extend: {
