@@ -481,6 +481,12 @@ add_action( 'pre_get_posts', 'vipx_parse_request_tricksy' );
 	ShortCode Functions
 \*------------------------------------*/
 
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page();
+    
+}
+
 // Shortcode Demo with Nested Capability
 function html5_shortcode_demo($atts, $content = null)
 {
