@@ -1,7 +1,4 @@
-<main class="lg:-mt-32 relative z-20">
-    <div class="max-w-7xl mx-auto py-12 lg:pt-0 px-4 sm:px-6 lg:px-8 space-y-8">
-
-      <?php 
+ <?php 
 
       $events = get_field('vendor_events');
       $handouts = get_field('vendor_handouts');
@@ -20,6 +17,11 @@
 
 
       ?>
+
+<?php if($events || $handouts || $videos) {?>
+
+<main class="lg:-mt-32 relative z-20">
+    <div class="max-w-7xl mx-auto py-12 lg:pt-0 px-4 sm:px-6 lg:px-8 space-y-8">
 
       <div 
       x-data="{
@@ -72,3 +74,5 @@
       </div>
     </div>
   </main>
+
+<?php } ?>
