@@ -404,6 +404,55 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
 /*------------------------------------*\
+    ACF Options Page
+\*------------------------------------*/
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Global Settings',
+        'menu_title'    => 'Global Settings',
+        'menu_slug'     => 'general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+    
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Banner Settings',
+        'menu_title'    => 'Banner Alert Settings',
+        'parent_slug'   => 'general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Footer',
+        'menu_title'    => 'Footer Details',
+        'parent_slug'   => 'general-settings',
+    ));
+    
+}
+
+/*------------------------------------*\
+    ACF Responsive Images
+\*------------------------------------*/
+
+function awesome_acf_responsive_image($image_id,$image_size,$max_width){
+
+    // check the image ID is not blank
+    if($image_id != '') {
+
+        // set the default src image size
+        $image_src = wp_get_attachment_image_url( $image_id, $image_size );
+
+        // set the srcset with various image sizes
+        $image_srcset = wp_get_attachment_image_srcset( $image_id, $image_size );
+
+        // generate the markup for the responsive image
+        echo 'src="'.$image_src.'" srcset="'.$image_srcset.'" sizes="(max-width: '.$max_width.') 100vw, '.$max_width.'"';
+
+    }
+}
+
+/*------------------------------------*\
 	Custom Post Types
 \*------------------------------------*/
 
@@ -481,11 +530,6 @@ add_action( 'pre_get_posts', 'vipx_parse_request_tricksy' );
 	ShortCode Functions
 \*------------------------------------*/
 
-if( function_exists('acf_add_options_page') ) {
-    
-    acf_add_options_page();
-    
-}
 
 // Shortcode Demo with Nested Capability
 function html5_shortcode_demo($atts, $content = null)
