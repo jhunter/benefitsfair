@@ -208,7 +208,7 @@ img,video{max-width:100%;height:auto}
 .-mb-px{margin-bottom:-1px}
 .max-w-lg{max-width:32rem}
 .max-w-xl{max-width:36rem}
-.max-w-2xl{max-width:42rem}
+.max-w-3xl{max-width:48rem}
 .max-w-7xl{max-width:80rem}
 .max-w-full{max-width:100%}
 .max-w-screen-xl{max-width:1280px}
@@ -248,6 +248,7 @@ img,video{max-width:100%;height:auto}
 .placeholder-gray-600::-ms-input-placeholder{--placeholder-opacity:1;color:#4b5563;color:rgba(75,85,99,var(--placeholder-opacity))}
 .placeholder-gray-600::-webkit-input-placeholder{--placeholder-opacity:1;color:#4b5563;color:rgba(75,85,99,var(--placeholder-opacity))}
 .placeholder-gray-600::placeholder{--placeholder-opacity:1;color:#4b5563;color:rgba(75,85,99,var(--placeholder-opacity))}
+.pointer-events-none{pointer-events:none}
 .fixed{position:fixed}
 .absolute{position:absolute}
 .relative{position:relative}
@@ -363,6 +364,7 @@ img,video{max-width:100%;height:auto}
 .sm\:p-6{padding:1.5rem}
 .sm\:px-0{padding-left:0;padding-right:0}
 .sm\:px-3{padding-left:.75rem;padding-right:.75rem}
+.sm\:px-4{padding-left:1rem;padding-right:1rem}
 .sm\:py-5{padding-top:1.25rem;padding-bottom:1.25rem}
 .sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
 .sm\:py-12{padding-top:3rem;padding-bottom:3rem}
@@ -400,7 +402,6 @@ img,video{max-width:100%;height:auto}
 .md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
 }@media(min-width:1024px){.container{max-width:1024px}
 .lg\:space-y-0>:not(template) ~ :not(template){--space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--space-y-reverse)));margin-bottom:calc(0px * var(--space-y-reverse))}
-.lg\:space-x-8>:not(template) ~ :not(template){--space-x-reverse:0;margin-right:calc(2rem * var(--space-x-reverse));margin-left:calc(2rem * calc(1 - var(--space-x-reverse)))}
 .lg\:space-x-16>:not(template) ~ :not(template){--space-x-reverse:0;margin-right:calc(4rem * var(--space-x-reverse));margin-left:calc(4rem * calc(1 - var(--space-x-reverse)))}
 .lg\:block{display:block}
 .lg\:flex{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -424,7 +425,9 @@ img,video{max-width:100%;height:auto}
 .lg\:max-w-screen-xl{max-width:1280px}
 .lg\:p-8{padding:2rem}
 .lg\:p-12{padding:3rem}
+.lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}
 .lg\:px-8{padding-left:2rem;padding-right:2rem}
+.lg\:py-12{padding-top:3rem;padding-bottom:3rem}
 .lg\:py-16{padding-top:4rem;padding-bottom:4rem}
 .lg\:py-20{padding-top:5rem;padding-bottom:5rem}
 .lg\:pt-0{padding-top:0}
