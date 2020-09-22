@@ -1,7 +1,7 @@
 <div class="rounded-lg shadow-lg bg-white p-4 sm:p-6 lg:px-8 lg:py-16">
   <div class="flex flex-col items-baseline max-w-lg mx-auto lg:max-w-none">
-    <h4 x-text="cookied ? 'Welcome Back' : 'Register Your Attendence'" class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-      Register Your Attendence
+    <h4 x-text="cookied ? 'Welcome Back' : 'Register Your Attendance'" class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+      Register Your Attendance
     </h4>
     <p x-text="cookied ? 'Since you’re already registered, log in to proceed directly to the fair.' : 'By registering, you are automatically entered in a gift card giveaway.'" class="mt-4 text-base leading-6 text-gray-500">
       By registering, you are automatically entered in a gift card giveaway.

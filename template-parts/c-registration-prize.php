@@ -9,7 +9,7 @@
         <h2 class="mt-6 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl sm:leading-9">
          <?= the_field('prize_title') ?>
         </h2>
-        <p class="max-w-2xl mt-2 text-lg leading-6 text-pkl-200" id="newsletter-headline">
+        <p class="max-w-3xl mt-2 text-lg leading-6 text-pkl-200" id="newsletter-headline">
           <?= the_field('prize_text') ?>
         </p>
       </div>

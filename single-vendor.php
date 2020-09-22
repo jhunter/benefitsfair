@@ -258,116 +258,111 @@ Template Post Type: vendor
             </div>
           </div>
           <div x-show="openTab === 'Handouts'">
-            <ul class="border border-gray-200 divide-y divide-gray-200 bg-white shadow overflow-hidden sm:rounded-lg">
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+            <div class="border border-gray-200 divide-y divide-gray-200 bg-white shadow overflow-hidden sm:rounded-lg">
+              <a href="<?= get_template_directory_uri() ?>/documents/milliman-roth-flyer.pdf" download class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Retirement Plans Overview
                   </h3>
                 </div>
-                <a href="<?= get_template_directory_uri() ?>/documents/milliman-roth-flyer.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
-                Download
+                <div class="w-full sm:w-auto pointer-events-none text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
+                  Download
+                </div>
               </a>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+              <a href="<?= get_template_directory_uri() ?>/documents/milliman-rollover-flyer.pdf" download class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Rollover Flyer
                   </h3>
                 </div>
-                <a href="<?= get_template_directory_uri() ?>/documents/milliman-rollover-flyer.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
-                Download
+                <div class="w-full sm:w-auto pointer-events-none text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
+                  Download
+                </div>
               </a>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+              <a href="<?= get_template_directory_uri() ?>/documents/milliman-retirement-plans-overview.pdf" download class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Roth Flyer
                   </h3>
                 </div>
-                <a href="<?= get_template_directory_uri() ?>/documents/milliman-retirement-plans-overview.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
-                Download
+                <div class="w-full sm:w-auto pointer-events-none text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
+                  Download
+                </div>
               </a>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+              <a href="<?= get_template_directory_uri() ?>/documents/milliman-plan-distribution-options.pdf" download class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>attachment</title><path d="M21.843,3.455a6.961,6.961,0,0,0-9.846,0L1.619,13.832a5.128,5.128,0,0,0,7.252,7.252L17.3,12.653A3.293,3.293,0,1,0,12.646,8L7.457,13.184A1,1,0,1,0,8.871,14.6L14.06,9.409a1.294,1.294,0,0,1,1.829,1.83L7.457,19.67a3.128,3.128,0,0,1-4.424-4.424L13.411,4.869a4.962,4.962,0,1,1,7.018,7.018L12.646,19.67a1,1,0,1,0,1.414,1.414L21.843,13.3a6.96,6.96,0,0,0,0-9.846Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Plan Distribution Options
                   </h3>
                 </div>
-                <a href="<?= get_template_directory_uri() ?>/documents/milliman-plan-distribution-options.pdf" download class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
-                Download
+                <div class="w-full sm:w-auto pointer-events-none text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
+                  Download
+                </div>
               </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div x-show="openTab === 'Videos'" @custom-event="console.log($event.detail.showVideoModal)">
-            <ul class="border border-gray-200 divide-y divide-gray-200 bg-white shadow overflow-hidden sm:rounded-lg">
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+            <div class="border border-gray-200 divide-y divide-gray-200 bg-white shadow overflow-hidden sm:rounded-lg">
+              <button @click="showVideoModal = true" class="w-full p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Market Volatility (1:36)
                   </h3>
                 </div>
-                <button class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150"  
-                  x-on:click="
-                    showVideoModal = true;
-                    console.log(showVideoModal);
-                  "
-                >
+                <div class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
                   Watch
-                </button>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                </div>
+              </button>
+              <button @click="showVideoModal = true" class="w-full p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Automatic Increase: How-To (2:19)
                   </h3>
                 </div>
-                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                <div class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
                   Watch
-                </button>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                </div>
+              </button>
+              <button @click="showVideoModal = true" class="w-full p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Beneficiary: How-To (2:07)
                   </h3>
                 </div>
-                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                <div class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
                   Watch
-                </button>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                </div>
+              </button>
+              <button @click="showVideoModal = true" class="w-full p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Rollover: How-To (2:59)
                   </h3>
                 </div>
-                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                <div class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
                   Watch
-                </button>
-              </li>
-              <li class="p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5">
+                </div>
+              </button>
+              <button @click="showVideoModal = true" class="w-full p-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row align-center items-center justify-between text-sm leading-5 hover:bg-blue-50 focus:outline-none focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
                 <div class="flex-1 flex space-x-2">
                   <svg class="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><title>button-play</title><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24Zm4.812-11.5a.939.939,0,0,1-.587.824L10.14,16.366a1.185,1.185,0,0,1-.531.133.919.919,0,0,1-.488-.136,1.032,1.032,0,0,1-.459-.911V9.546a.974.974,0,0,1,1.478-.914l6.085,3.043A.939.939,0,0,1,16.812,12.5Z"></path></svg>
                   <h3 class="text-lg leading-6 font-medium text-gray-900">
                     Roth After-tax Saving (1:11)
                   </h3>
                 </div>
-                <button @click="showVideoModal = true" class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                <div class="w-full sm:w-auto text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100">
                   Watch
-                </button>
-              </li>
-            </ul>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>

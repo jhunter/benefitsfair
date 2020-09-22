@@ -28,6 +28,5 @@
   </div>
   <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
     <div x-show="!newhero" class="h-56 w-full bg-cover bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?php the_field('header_image'); ?>)"></div>
-    <!-- <div x-show="newhero" class="h-56 w-full bg-cover bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/hero-masked.jpg)"></div> -->
   </div>
 </div>
