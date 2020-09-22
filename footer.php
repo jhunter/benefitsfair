@@ -18,7 +18,7 @@
 			          ?>
 
 			          <img  class="block max-w-full w-64" 
-			                <?php awesome_acf_responsive_image($logo['id'],'custom-size','700px'); ?>
+			                src='<?= $logo["url"] ?>'
 			                alt='<?= $logo_alt ?>'
 			          /> 
 

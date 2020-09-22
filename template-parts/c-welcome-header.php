@@ -15,7 +15,7 @@
           <img  x-bind:data-unbranded="unbranded"
                 id="branding"
                 class="lg:max-w-md"  
-                <?php awesome_acf_responsive_image($logo['id'],'custom-size','700px'); ?>
+                src='<?= $logo["url"] ?>'
                 alt='<?= $logo_alt ?>'
           /> 
 
