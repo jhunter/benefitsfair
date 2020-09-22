@@ -30,7 +30,8 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('square-med', 128, 128, true);
+    add_image_size('header-wide', 700, 200, true); // Custom Thumbnail Size call usingthe_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -357,7 +358,10 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_vendor'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_vendor'); 
+add_action('init', 'create_post_type_event'); 
+// add_action('init', 'create_post_type_handout'); 
+add_action('init', 'create_post_type_video'); 
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -478,8 +482,8 @@ function create_post_type_vendor()
             'not_found_in_trash' => __('No Vendors found in Trash', 'vendor')
         ),
         'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
+        'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
         'supports' => array(
             'title',
             'editor',
@@ -494,6 +498,116 @@ function create_post_type_vendor()
         'menu_icon'           => 'dashicons-store',
     ));
 }
+
+function create_post_type_event()
+{
+    register_taxonomy_for_object_type('category', 'event'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'event');
+    register_post_type('event', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Events', 'event'), // Rename these to suit
+            'singular_name' => __('Event', 'event'),
+            'add_new' => __('Add New', 'event'),
+            'add_new_item' => __('Add New Event', 'event'),
+            'edit' => __('Edit', 'event'),
+            'edit_item' => __('Edit Event', 'event'),
+            'new_item' => __('New Event', 'event'),
+            'view' => __('View Event', 'event'),
+            'view_item' => __('View Event', 'event'),
+            'search_items' => __('Search Events', 'event'),
+            'not_found' => __('No Event found', 'event'),
+            'not_found_in_trash' => __('No Events found in Trash', 'event')
+        ),
+        'public' => true,
+        'publicly_queryable' => false,
+        'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
+        'supports' => array(
+            'title',
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            // 'post_tag',
+            // 'category'
+        ), // Add Category and Post Tags support
+        'menu_icon'           => 'dashicons-calendar-alt',
+    ));
+}
+
+function create_post_type_handout()
+{
+    register_taxonomy_for_object_type('category', 'handout'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'handout');
+    register_post_type('handout', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Handouts', 'handout'), // Rename these to suit
+            'singular_name' => __('Handout', 'handout'),
+            'add_new' => __('Add New', 'handout'),
+            'add_new_item' => __('Add New Handout', 'handout'),
+            'edit' => __('Edit', 'handout'),
+            'edit_item' => __('Edit Handout', 'handout'),
+            'new_item' => __('New Handout', 'handout'),
+            'view' => __('View Handout', 'handout'),
+            'view_item' => __('View Handout', 'handout'),
+            'search_items' => __('Search Handouts', 'handout'),
+            'not_found' => __('No Handout found', 'handout'),
+            'not_found_in_trash' => __('No Handouts found in Trash', 'handout')
+        ),
+        'public' => true,
+        'publicly_queryable' => false,
+        'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
+        'supports' => array(
+            'title',
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            // 'post_tag',
+            // 'category'
+        ), // Add Category and Post Tags support
+        'menu_icon'           => 'dashicons-media-default',
+    ));
+}
+
+function create_post_type_video()
+{
+    register_taxonomy_for_object_type('category', 'video'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'video');
+    register_post_type('video', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Videos', 'video'), // Rename these to suit
+            'singular_name' => __('Video', 'video'),
+            'add_new' => __('Add New', 'video'),
+            'add_new_item' => __('Add New Video', 'video'),
+            'edit' => __('Edit', 'video'),
+            'edit_item' => __('Edit Video', 'video'),
+            'new_item' => __('New Video', 'video'),
+            'view' => __('View Video', 'video'),
+            'view_item' => __('View Video', 'video'),
+            'search_items' => __('Search Videos', 'video'),
+            'not_found' => __('No Video found', 'video'),
+            'not_found_in_trash' => __('No Videos found in Trash', 'video')
+        ),
+        'public' => true,
+        'publicly_queryable' => false,
+        'hierarchical' => false, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
+        'supports' => array(
+            'title',
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            // 'post_tag',
+            // 'category'
+        ), // Add Category and Post Tags support
+        'menu_icon'           => 'dashicons-video-alt3',
+    ));
+}
+
+
 
 /**
  * Remove the slug from published post permalinks. Only affect our CPT though.
