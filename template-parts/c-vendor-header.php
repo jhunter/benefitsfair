@@ -37,11 +37,17 @@
                     <?= get_field('website')['title'] ?>
                   </a>
 
+                  <?php if(get_field('phone_number')){ ?>
+
                   <a class="flex nounderline hover:underline text-white hover:text-cool-gray-100 transition duration-150 ease-in-out" href="<?= get_field('phone_number')['url'] ?>">
                     <?= file_get_contents(get_template_directory_uri().'/img/svg/phone.svg'); ?>
                     <?= get_field('phone_number')['title'] ?>
                   </a>
+                   <?php }?>
+                   
                 </div>
+
+
 
                 <!-- <div x-show="double" class="inline-grid grid-cols-1 md:grid-cols-2 mt-4 gap-y-2 md:gap-x-4">
                   <a class="flex nounderline hover:underline text-white hover:text-cool-gray-100 transition duration-150 ease-in-out" href="https://www.travelers.com" target="_blank">
