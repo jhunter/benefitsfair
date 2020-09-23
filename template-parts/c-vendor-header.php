@@ -10,7 +10,7 @@
 
             <div class="justify-center">
 
-              <div :class="{'-space-x-10':double}" class="flex relative overflow-hidden flex-shrink-0">
+              <div class="flex relative overflow-hidden flex-shrink-0 -space-x-10">
 
                 <?php if(!get_field('multiple_vendor')){ ?>
 
