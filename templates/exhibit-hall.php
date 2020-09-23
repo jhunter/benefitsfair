@@ -52,10 +52,10 @@ Template Name: Exhibit Hall
     <header class="py-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-3xl leading-9 font-bold text-white">
-          Exhibit Hall
+          <?= the_title(); ?>
         </h1>
         <p class="mt-3 max-w-xl text-lg leading-6 text-gray-300">
-          Browse these vendor booths to learn more about your benefits.
+          <?= get_field('intro'); ?>
         </p>
       </div>
     </header>

@@ -23,8 +23,22 @@
 
 		            <li class="w-full lg:flex-vendor">
 		              
-		              <a href="<?= get_permalink() ?>" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
-		                <img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= esc_url(get_field('vendor_logo')['sizes']['square-med']) ?>" alt="">
+		              	<a href="<?= get_permalink() ?>" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
+		              	
+		              	
+		              		<?php if(!get_field('multiple_vendor')){ ?>
+		                		<img class="w-12 h-12 my-2 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover" src="<?= esc_url(get_field('vendor_logo')['sizes']['square-med']) ?>" alt="">
+		                	<?php }else{ ?>
+		                		<div class="flex relative overflow-hidden my-2 flex-shrink-0 -space-x-4">
+		                		<img class="relative inline-block w-12 h-12 rounded-full text-white group-hover:text-blue-50 shadow-solid border border-gray-300 object-cover"
+		                			src="<?= esc_url(get_field('vendor_logo')['sizes']['square-med']) ?>"
+		                			alt="">
+                  				<img class="relative inline-block w-12 h-12 rounded-full text-white group-hover:text-blue-50 shadow-solid border border-gray-300 object-cover"
+                  					src="<?= esc_url(get_field('second_vendor_logo')['sizes']['square-med']) ?>"
+                  					alt="">
+		                </div>
+		                	<?php } ?>
+
 		                <div class="flex-1">
 		                  <div class="flex items-center space-x-3">
 		                    <h3 class="text-gray-900 text-lg leading-5 font-medium"><?= get_field('benefit_type') ?></h3>

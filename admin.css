@@ -1,0 +1,14 @@
+.admin-tall-relate ul.acf-bl.list.choices-list{
+	height: 50vh;
+}
+
+ .admin-tall-relate ul.acf-bl.list.values-list.ui-sortable{
+ 	height: 50vh;
+ 	}
+
+ ul.acf-bl.list.values-list.ui-sortable li {
+ 	border-bottom: 1px solid lightgrey;
+ 	border-radius: 5px;
+ 	background-color: #f5f5f5;
+ 	margin-bottom: 2px;
+}

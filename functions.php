@@ -88,6 +88,10 @@ function html5blank_nav()
 	);
 }
 
+function admin_style() {
+  wp_enqueue_style('admin-styles', get_template_directory_uri().'/admin.css');
+}
+
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {
@@ -353,6 +357,7 @@ function html5blankcomments($comment, $args, $depth)
 \*------------------------------------*/
 
 // Add Actions
+add_action('admin_enqueue_scripts', 'admin_style');
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments

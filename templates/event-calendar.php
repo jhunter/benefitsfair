@@ -60,10 +60,10 @@ Template Name: Event Calendar
               <div class="md:flex md:space-x-4 justify-center">
                 <div class="flex-1">
                   <h1 class="text-3xl leading-9 font-bold text-white">
-                    Event Calendar
+                    <?= the_title(); ?>
                   </h1>
                   <p class="mt-3 max-w-xl text-lg leading-6 text-gray-300">
-                    Sign up to attend a webinar led by benefit representatives.
+                    <?= get_field('intro'); ?>
                   </p>
                 </div>
               </div>
@@ -71,13 +71,102 @@ Template Name: Event Calendar
           </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/5">
-          <div x-show="newhero" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/lg-1517141402.jpg)"></div>
-          <div x-show="!newhero" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/1681615609.jpg)"></div>
+          <!-- <div x-show="newhero" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_template_directory_uri() ?>/img/lg-1517141402.jpg)"></div> -->
+          <div x-show="!newhero" class="h-56 w-full bg-cover bg-center bg-top sm:h-72 md:h-96 lg:w-full lg:h-full" style="background-image:url(<?= get_field('header_image')['url'] ?>"></div>
         </div>
       </div>
   </div>
 
   <main class="lg:-mt-32 relative z-20">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 space-y-8">
+
+  <?php
+
+    $events = get_field('event_order');
+
+    if($events): 
+
+    foreach($events as $post):
+
+      setup_postdata($post);
+  ?>
+
+    <?php
+
+      $vendor = get_field('associated_vendor');
+      $logo = get_field('vendor_logo',$vendor[0]);
+
+    ?>
+
+    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+        <div class="px-4 sm:px-6 py-5 border-b border-gray-200 flex items-center flex-wrap sm:space-x-4">
+          <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 border border-gray-300 object-cover self-start" src="<?= $logo['sizes']['square-med'] ?>" alt="">
+          <div class="flex-1 ml-4 sm:ml-0">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">
+              <?= get_field('display_name') ?>
+            </h3>
+          </div>
+        </div>
+        <div class="px-4 py-5 sm:p-0">
+          <dl>
+            <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
+              <dt class="text-sm leading-5 font-medium text-gray-500">
+                Description
+              </dt>
+              <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                <?= get_field('event_description')?>
+              </dd>
+            </div>
+            <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5">
+              <dt class="text-sm leading-5 font-medium text-gray-500">
+                Date
+              </dt>
+
+              <?php if( have_rows('event_details')) : ?>
+
+              <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                <ul class="border border-gray-200 divide-y divide-gray-200 rounded-md">
+
+                <?php while(have_rows('event_details')) : the_row(); ?>
+
+                  <li class="p-4 flex items-center justify-between text-sm leading-5">
+                    <div class="w-0 flex-1 flex items-center">
+                        <?php
+
+                          $event_start = DateTime::createFromFormat('d/m/Y g:i a', get_sub_field('start_time'));
+                          echo $event_start->format( 'M j - g:i a' );
+                        ?>
+                        <!-- Nov 1 - 3:00 PM -->
+                      </div>
+                      <a href="<?= get_sub_field('registration_link')['url'] ?>" target="_blank" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
+                      Register
+                    </a>
+                    </li>
+
+                <?php endwhile; ?>
+
+                </ul>
+              </dd>
+
+            <?php endif; ?>
+
+              
+                  
+            </div>
+          </dl>
+        </div>
+      </div>
+
+  <?php
+
+    endforeach;
+    wp_reset_postdata();
+    endif;
+
+  ?>
+    </div>
+  </main>
+  <!-- <main class="lg:-mt-32 relative z-20">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 space-y-8">
 
       <div class="bg-white shadow overflow-hidden sm:rounded-lg">
@@ -223,7 +312,7 @@ Template Name: Event Calendar
       </div>
 
     </div>
-  </main>
+  </main> -->
 </div>
 <!-- footer -->
 
