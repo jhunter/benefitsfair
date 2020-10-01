@@ -9,7 +9,7 @@
         	<?php } ?>
 	          
 	          <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-	            <div class="bg-white max-w-lg py-8 px-6 lg:p-12 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
+	            <div class="bg-white max-w-lg py-8 px-6 mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
 	              <div class="text-left lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center">
 
 	              	<?php
