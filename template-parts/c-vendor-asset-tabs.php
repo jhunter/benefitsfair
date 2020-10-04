@@ -25,6 +25,8 @@
 
       <div 
       x-data="{
+        videoModal: false,
+        videoModalSrc : '',
         openTab:'<?=$priority?>',
         activeClasses: 'border-blue-500 text-blue-600 focus:text-blue-800 focus:border-blue-700',
         inactiveClasses: 'border-transparent text-gray-500 focus:text-gray-700 focus:border-gray-300 hover:text-gray-700 hover:border-gray-300',
@@ -33,6 +35,21 @@
       }"
 
       class="bg-gray-100 shadow overflow-hidden rounded-lg">
+        <template @video-modal.window="videoModal = true; videoModalSrc = $event.detail.videoModalSrc;" x-if="videoModal">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="videoModalSrc = ''" class="fixed inset-0 px-4 pb-6 sm:p-0 sm:flex sm:items-center sm:justify-center z-60">
+            <div class="fixed inset-0 transition-opacity">
+              <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            <div @click.away="videoModal = ''" class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-4xl sm:w-full" role="dialog" aria-modal="true">
+              <div class="p-4 sm:p-6 ">
+                <div class="relative">
+                  <div class="aspect-ratio-16/9"></div>
+                  <iframe :src="videoModalSrc" class="absolute left-0 top-0 w-full h-full" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
         <div id="tabs">
           <div class="sm:hidden">
             <select x-model="openTab" aria-label="Selected tab" class="form-select block w-full">
