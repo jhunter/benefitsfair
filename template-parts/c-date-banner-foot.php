@@ -12,7 +12,7 @@ $current_ts = strtotime($currentDate);
 
 if( (($current_ts >= $start_ts) && ($current_ts <= $end_ts)) || get_field('force_enrollment_banner','options') ){ ?>
 
-<div x-data="{ hideBanner: false }" :class="{'block': !hideBanner, 'hidden': hideBanner }" class="fixed bottom-0 inset-x-0 pb-2 sm:pb-5  z-50" >
+<div x-data="{ hideBanner: false }" :class="{'block': !hideBanner, 'hidden': hideBanner }" class="fixed bottom-0 inset-x-0 pb-2 sm:pb-5 z-40" >
   <div class="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
     <div class="p-2 rounded-lg bg-pkl-600 shadow-lg sm:p-3">
       <div class="flex items-center justify-between flex-wrap">
