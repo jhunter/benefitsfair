@@ -236,7 +236,6 @@ img,video{max-width:100%;height:auto}
 .py-10{padding-top:2.5rem;padding-bottom:2.5rem}
 .py-12{padding-top:3rem;padding-bottom:3rem}
 .pb-2{padding-bottom:.5rem}
-.pl-3{padding-left:.75rem}
 .pr-4{padding-right:1rem}
 .pb-6{padding-bottom:1.5rem}
 .pb-12{padding-bottom:3rem}
@@ -295,7 +294,6 @@ img,video{max-width:100%;height:auto}
 .hover\:text-teal-500:hover{--text-opacity:1;color:#0694a2;color:rgba(6,148,162,var(--text-opacity))}
 .hover\:text-blue-600:hover{--text-opacity:1;color:#1c64f2;color:rgba(28,100,242,var(--text-opacity))}
 .hover\:text-pkl-500:hover{--text-opacity:1;color:#b968fd;color:rgba(185,104,253,var(--text-opacity))}
-.hover\:text-pkl-800:hover{--text-opacity:1;color:#682daa;color:rgba(104,45,170,var(--text-opacity))}
 .focus\:text-white:focus{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}
 .focus\:text-gray-700:focus{--text-opacity:1;color:#374151;color:rgba(55,65,81,var(--text-opacity))}
 .focus\:text-blue-800:focus{--text-opacity:1;color:#1e429f;color:rgba(30,66,159,var(--text-opacity))}
@@ -424,7 +422,6 @@ img,video{max-width:100%;height:auto}
 .lg\:max-w-xl{max-width:36rem}
 .lg\:max-w-screen-xl{max-width:1280px}
 .lg\:p-8{padding:2rem}
-.lg\:p-12{padding:3rem}
 .lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}
 .lg\:px-8{padding-left:2rem;padding-right:2rem}
 .lg\:py-12{padding-top:3rem;padding-bottom:3rem}

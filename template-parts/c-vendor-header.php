@@ -104,7 +104,22 @@
                 </div>
 
               <?php }} ?>
+                <?php
 
+                $enroll_start_date = DateTime::createFromFormat('Ymd', get_field('benefits_fair_start_date','options'));
+
+                $enroll_end_date = DateTime::createFromFormat('Ymd', get_field('benefits_fair_end_date','options'));
+
+                $currentDate = date("Y-m-d");
+
+                $start_ts = strtotime($enroll_start_date->format( 'Y-m-d' ));
+                $end_ts = strtotime($enroll_end_date->format( 'Y-m-d' ));
+                $current_ts = strtotime($currentDate);
+
+                if(get_field('contact_email') && ((($current_ts >= $start_ts) && ($current_ts <= $end_ts)) || get_field('force_display_vendor_contacts','options')) ){ 
+
+                ?>
+                
                 <button @click="openModal = true" class="mt-6 group w-full md:w-auto flex items-center text-left p-6 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
                   
                   <?php
@@ -144,7 +159,7 @@
                     </svg>
                   </div>
                 </button>
-
+              <?php } ?>
               </div>
             </div>
           </main>
