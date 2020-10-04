@@ -103,8 +103,8 @@ function html5blank_header_scripts()
      //    wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
      //    wp_enqueue_script('modernizr'); // Enqueue it!
 
-        // wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        // wp_enqueue_script('html5blankscripts'); // Enqueue it!
+        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('html5blankscripts'); // Enqueue it!
         wp_register_script('alpine','https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('alpine'); // Enqueue it!
 
@@ -426,17 +426,17 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'      => false
     ));
     
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Banner Settings',
-        'menu_title'    => 'Banner Alert Settings',
-        'parent_slug'   => 'general-settings',
-    ));
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Banner Settings',
+    //     'menu_title'    => 'Banner Alert Settings',
+    //     'parent_slug'   => 'general-settings',
+    // ));
 
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Footer',
-        'menu_title'    => 'Footer Details',
-        'parent_slug'   => 'general-settings',
-    ));
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Footer',
+    //     'menu_title'    => 'Footer Details',
+    //     'parent_slug'   => 'general-settings',
+    // ));
     
 }
 
