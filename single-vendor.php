@@ -1,10 +1,3 @@
-<?php
-/*
-Template Name: Vendor Booth
-Template Post Type: vendor
-*/
-?>
-
 <?php get_header(); ?>
 
 <div class="bg-gray-300">
@@ -143,20 +136,6 @@ Template Post Type: vendor
     </div>
     <div class="p-4 sm:p-6 bg-gray-50 border-t-2 border-gray-200">
       <p class="text-xs leading-5 text-gray-500">Please do not include personal details in your message, such as Social Security number. This email is only active during live Virtual Benefits Fair days.</p>
-    </div>
-  </div>
-</div>
-<!-- video modal -->
-<div class="fixed inset-0 px-4 pb-6 sm:p-0 sm:flex sm:items-center sm:justify-center z-50" x-show="showVideoModal" x-cloak>
-  <div class="fixed inset-0 transition-opacity">
-    <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
-  </div>
-  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-4xl sm:w-full" role="dialog" aria-modal="true" @click.away="showVideoModal = false">
-    <div class="p-4 sm:p-6 ">
-      <div class="relative">
-        <div class="aspect-ratio-16/9"></div>
-        <iframe src="https://www.youtube-nocookie.com/embed/ubUqtN9Kl4E" class="absolute left-0 top-0 w-full h-full" frameborder="0" allowfullscreen></iframe>
-      </div>
     </div>
   </div>
 </div>
