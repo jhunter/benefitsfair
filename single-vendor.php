@@ -1,10 +1,3 @@
-<?php
-/*
-Template Name: Vendor Booth
-Template Post Type: vendor
-*/
-?>
-
 <?php get_header(); ?>
 
 <div class="bg-gray-300">
