@@ -23,7 +23,7 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?> class="antialiased" x-data="{ 
+	<body style="display:none" <?php body_class(); ?> class="antialiased" x-data="{ 
 	  openModal: false,
 	  openRegistration: false,
 	  showVideoModal: false,

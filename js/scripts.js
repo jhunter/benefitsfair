@@ -8,13 +8,15 @@
     	 var mySubmitController = Marionette.Object.extend( {
   
 		  initialize: function() {
-		    this.listenTo( Backbone.Radio.channel( 'forms' ), 'submit:response', this.actionSubmit );
+		    this.listenTo( Backbone.Radio.channel( 'forms' ), 'submit:response', this.actionSubmit )
 		  },
 
 		  actionSubmit: function( response ) {
 		  	if(response.data.form_id == 2)
 		  	{
 			  	setCookie('registered','completed',30)
+			  	//Register
+			  	ga('send', 'event', 'VisitorAccess', 'Register')
 		  	}
 		  },
 
@@ -57,17 +59,18 @@
 	  var username = getCookie("registered");
 	  if (username != "") {
 
-	  
+		$('body').show();	  
 	  
 	  } else {
-
-	  window.location = "/";
-
+	  	window.location = "/";
 	  }
 	}
 
 	function checkCookieHome() {
 	  var username = getCookie("registered");
+
+	  $('body').show();
+	  
 	  if (username != "") {
 
 	  	$('#return').show();
