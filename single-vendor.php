@@ -97,7 +97,8 @@
         <p class="mt-4 text-base leading-6 text-gray-500">
           Representatives will answer your general plan questions within one business day.
         </p>
-        <form action="#" method="POST" class="flex flex-col space-y-6 mt-4">
+        <?= do_shortcode('[ninja_form id=3]'); ?>
+        <!-- <form action="#" method="POST" class="flex flex-col space-y-6 mt-4">
           <div class="flex space-x-3">
             <div class="flex-1">
               <label for="first_name" class="sr-only">First Name</label>
@@ -131,7 +132,7 @@
               </button>
             </span>
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
     <div class="p-4 sm:p-6 bg-gray-50 border-t-2 border-gray-200">
