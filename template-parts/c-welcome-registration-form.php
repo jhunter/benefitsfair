@@ -1,5 +1,5 @@
 <div id="form" style="display:none" class="rounded-lg shadow-lg bg-white p-4 sm:p-6 lg:px-8 lg:py-16">
-  <div class="flex flex-col items-baseline max-w-lg mx-auto lg:max-w-none">
+  <div class="">
       
     <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
       Register Your Attendance
@@ -13,7 +13,7 @@
 </div>
 
 <div id="return" style="display:none" class="rounded-lg shadow-lg bg-white p-4 sm:p-6 lg:px-8 lg:py-16">
-  <div class="flex flex-col items-baseline max-w-lg mx-auto lg:max-w-none">
+  <div class="">
       
     <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
       Welcome Back

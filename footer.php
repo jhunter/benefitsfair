@@ -17,10 +17,9 @@
 			            $logo_alt = $logo['alt'];
 			          ?>
 
-			          <img  class="block max-w-full w-64" 
-			                src='<?= $logo["url"] ?>'
-			                alt='<?= $logo_alt ?>'
-			          /> 
+			          <div  class="block max-w-full bg-no-repeat w-64 h-16" 
+			                style="background-image:url(<?= $logo['url'] ?>)"
+			          ></div>
 
 	                <p class="mt-2 text-base leading-6 text-gray-500">
 	                  <?= the_field('contact_subhead','options') ?>

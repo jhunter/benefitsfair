@@ -134,7 +134,7 @@
                     <img class="w-12 h-12 bg-blue-300 rounded-full flex-shrink-0 object-cover" src="<?= get_template_directory_uri() ?>/img/backup.gif" alt="">
                   <?php } ?>
 
-                  <div class="flex-1 truncate">
+                  <div class="truncate">
                     <div class="flex items-baseline space-x-3">
                       <h3 class="text-gray-900 text-lg leading-5 font-medium truncate">
                         <?php
