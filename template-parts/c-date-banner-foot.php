@@ -35,7 +35,7 @@ if( (($current_ts >= $start_ts) && ($current_ts <= $end_ts)) || get_field('force
         </div>
         <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
           <div class="rounded-md shadow-sm">
-            <a href="<?= get_field('ics_file','options')["url"] ?>" class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-pkl-800 bg-white hover:text-pkl-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" download>
+            <a target="_blank" href="<?= get_field('ics_file','options')["url"] ?>" class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-pkl-800 bg-white hover:text-pkl-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" download>
             <?= the_field('calendar_btn_label','options') ?>
           </a>
           </div>
