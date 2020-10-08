@@ -51,7 +51,14 @@
 			                <!-- Nov 1 - 3:00 PM -->
 			              </div>
 			              <a href="<?= get_sub_field('registration_link')['url'] ?>" target="_blank" class="text-center block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-blue-200 transition ease-in-out duration-150">
-			              Register
+			              <?php 
+							if (get_sub_field('registration_link')['title'] != ''){
+								echo esc_html( get_sub_field('registration_link')['title'] );
+							}
+							else {
+								echo 'Register';
+							}
+						  ?>
 			            </a>
 			            </li>
 
