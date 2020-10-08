@@ -8,7 +8,7 @@
     <!-- features -->
     <div class="pt-16 bg-gray-50 lg:pt-32">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <div class="relative lg:flex lg:space-x-16 lg:items-center space-y-10 lg:space-y-0">
+        <div class="relative lg:flex lg:space-x-16 lg:items-top space-y-10 lg:space-y-0">
           
           <div class="relative lg:flex-1">
             <?php get_template_part( 'template-parts/c-welcome-info'); ?>

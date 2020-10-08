@@ -8,7 +8,7 @@
           </h3>
         </div>
         <div class="md:w-2/3 px-4 py-5 sm:px-6 min-h-65">
-        	<ul class="flex flex-wrap flex-col space-y-6 lg:flex-row lg:justify-between lg:items-baseline lg:-mt-6">
+        	<ul class="flex flex-wrap flex-col lg:flex-row">
 
         		<?php
 
@@ -21,7 +21,7 @@
 						setup_postdata($post);
 				?>
 
-		            <li class="w-full lg:flex-vendor">
+		            <li class="w-full flex-vendor">
 		              
 		              	<a href="<?= get_permalink() ?>" class="group w-full flex items-center justify-between px-6 py-4 space-x-4 bg-white border border-gray-300 rounded-md hover:bg-blue-50 hover:border-blue-500 focus:outline-none focus:bg-blue-50 focus:border-blue-500 transition duration-150 ease-in-out">
 		              	

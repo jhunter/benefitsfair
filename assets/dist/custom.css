@@ -15,8 +15,22 @@
   padding-bottom: calc(100% / 16 * 9);
 }
 
+.flex-vendor + .flex-vendor {
+  margin-top: 1.5rem;
+}
+
 @media (min-width: 1024px) {
-  .lg\:flex-vendor {
+  .flex-vendor {
     flex: 0 1 calc(50% - 0.75rem);
+  }
+
+  @supports (row-gap: 10px) {
+    .flex-vendor:nth-child(2) {
+      margin-top: 0;
+    }
+    
+    .flex-vendor:nth-child(2n) {
+      margin-left: 1.5rem;
+    }
   }
 }
