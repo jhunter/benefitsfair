@@ -50,8 +50,8 @@ Template Name: Event Calendar
       -->
       <div :class="{'block': menuopen, 'hidden': !menuopen }" class="border-b border-gray-700 md:hidden">
         <div class="px-2 py-3 sm:px-3 space-y-1">
-          <a href="/exhibithall.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Exhibit Hall</a>
-          <a href="/calendar.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Event Calendar</a>
+          <a href="<?= site_url() ?>/exhibit-hall" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Exhibit Hall</a>
+          <a href="<?= site_url() ?>/event-calendar" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Event Calendar</a>
         </div>
       </div>
     </nav>
