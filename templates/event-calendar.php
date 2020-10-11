@@ -19,9 +19,7 @@ Template Name: Event Calendar
                 <a href="<?= site_url() ?>/exhibit-hall" class="px-3 py-5 text-sm font-medium text-gray-300 hover:text-white border-b-2 border-transparent hover:border-white focus:border-white focus:outline-none focus:text-white focus:bg-pkl-700 transition duration-150 ease-in-out">Exhibit Hall</a>
 
                 <?php if ((wp_count_posts( 'event' )->publish) > 0 ) { ?>
-
                 <a href="<?= site_url() ?>/event-calendar" class="px-3 py-2 border border-pkl-300 text-sm leading-4 font-medium rounded-md text-pkl-900 bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150">Event Calendar</a>
-
                 <?php } ?>
 
               </div>
@@ -51,7 +49,9 @@ Template Name: Event Calendar
       <div :class="{'block': menuopen, 'hidden': !menuopen }" class="border-b border-gray-700 md:hidden">
         <div class="px-2 py-3 sm:px-3 space-y-1">
           <a href="<?= site_url() ?>/exhibit-hall" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Exhibit Hall</a>
+          <?php if ((wp_count_posts( 'event' )->publish) > 0 ) { ?>
           <a href="<?= site_url() ?>/event-calendar" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Event Calendar</a>
+          <?php } ?>
         </div>
       </div>
     </nav>
