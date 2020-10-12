@@ -364,6 +364,7 @@ img,video{max-width:100%;height:auto}
 .sm\:py-5{padding-top:1.25rem;padding-bottom:1.25rem}
 .sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
 .sm\:py-12{padding-top:3rem;padding-bottom:3rem}
+.sm\:pb-0{padding-bottom:0}
 .sm\:pb-5{padding-bottom:1.25rem}
 .sm\:pb-20{padding-bottom:5rem}
 .sm\:inset-0{top:0;right:0;bottom:0;left:0}
