@@ -34,7 +34,7 @@
 	                </div>
 	                
 	                <?php if( have_rows('help_info','options') ): ?>
-	                	<div class="mt-8 space-y-2 xl:space-y-0 xl:space-x-2 flex flex-col xl:flex-row">
+	                	<div class="mt-4 space-y-2 xl:space-y-0 xl:space-x-2 flex flex-col xl:flex-row">
 
 	                		<?php while( have_rows('help_info','options') ) : the_row();?>
 
