@@ -43,7 +43,7 @@
 
 				var email = $('#nf-field-16').val();
 
-				console.log(email)
+				// console.log(email)
 
 	    		var mySubmitControllerVendor = Marionette.Object.extend(
 	    		{
