@@ -21,7 +21,7 @@
 			                style="background-image:url(<?= $logo['url'] ?>)"
 			          ></div>
 
-	                <p class="mt-2 text-base leading-6 text-gray-500">
+	                <p class="mt-2 text-xs leading-6 text-gray-500">
 	                  <?= the_field('contact_subhead','options') ?>
 	                </p>
 	              </div>
@@ -44,7 +44,6 @@
 
 	                			?>
 
-	                			<a href="<?= $link['url'] ?>" class="inline-flex items-center whitespace-no-wrap px-5 py-3 space-x-1 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out">
 			                    <?php 
 
 			                    switch(get_sub_field('contact_type'))
@@ -58,6 +57,7 @@
 			                    }
 
 			                    ?>
+	                			<a href="<?= $link['url'] ?>" class="inline-flex items-center whitespace-no-wrap px-3 py-2 space-x-1 border border-transparent text-sm leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:shadow-outline focus:border-blue-300 transition duration-150 ease-in-out">
 								<div>
 									<?= get_sub_field('contact_label') ?>
 									<br/>
