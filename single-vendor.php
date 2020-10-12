@@ -90,7 +90,7 @@
       From: "opacity-100 translate-y-0 sm:scale-100"
       To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
   -->
-  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-md sm:w-full z-50" role="dialog" aria-modal="true" aria-labelledby="modal-headline" @click.away="openModal = false">
+  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full z-50" role="dialog" aria-modal="true" aria-labelledby="modal-headline" @click.away="openModal = false">
     <div class="p-4 sm:p-6 ">
       <div class="text-center">
         <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
