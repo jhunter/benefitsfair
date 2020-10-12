@@ -4,33 +4,71 @@
 		
 		'use strict';
 		
-		  if( $('body.home').length ){
-    	 var mySubmitController = Marionette.Object.extend( {
-  
-		  initialize: function() {
-		    this.listenTo( Backbone.Radio.channel( 'forms' ), 'submit:response', this.actionSubmit )
-		  },
+		if( $('body.home').length )
+		{
+    		var mySubmitController = Marionette.Object.extend(
+    		{
+  				initialize: function()
+				{
+			    	this.listenTo( Backbone.Radio.channel( 'forms' ), 'submit:response', this.actionSubmit )
+			  	},
 
-		  actionSubmit: function( response ) {
-		  	if(response.data.form_id == 2)
-		  	{
-			  	setCookie('registered','completed',30)
-			  	//Register
-			  	ga('send', 'event', 'VisitorAccess', 'Register')
-		  	}
-		  },
+			  	actionSubmit: function( response )
+			  	{
+			  		if(response.data.form_id == 2)
+			  		{
+				  		setCookie('registered','completed',30)
+					  	//Register
+					  	ga('send', 'event', 'VisitorAccess', 'Register')
+			  		}
+			  	},
 
-		});
+			});
+    	
+    		new mySubmitController();
+
+    		checkCookieHome();
+
+		}
+
+		else{
+
+			checkCookieOther();
+		}
+
+		setTimeout(function(){
+			if( $('body.vendor-template-default').length )
+			{
+				var url = location.pathname.replace(/^\/|\/$/g, '')
+
+				var email = $('#nf-field-16').val();
+
+				console.log(email)
+
+	    		var mySubmitControllerVendor = Marionette.Object.extend(
+	    		{
+	  				initialize: function()
+					{
+				    	this.listenTo( Backbone.Radio.channel( 'forms' ), 'submit:response', this.actionSubmit )
+				  	},
+
+				  	actionSubmit: function( response )
+				  	{
+				  		if(response.data.form_id == 3)
+				  		{
+				  			ga('send', 'event', 'ContactVendor', url, email)
+				  		}
+				  	},
+
+				});
+	    	
+	    		new mySubmitControllerVendor();
+
+			}
+		}, 3000);
 
 
-    	new mySubmitController();
 
-    	checkCookieHome();
-	}
-
-	else{
-		checkCookieOther();
-	}    
 
 
 	function setCookie(cname, cvalue, exdays) {
