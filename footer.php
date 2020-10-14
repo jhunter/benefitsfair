@@ -55,7 +55,17 @@
 
 	                	</div>
 	                <?php endif; ?>
-
+					<?php if( get_field('support','options') ): ?>
+						<div class="mt-4 flex items-center">
+							<h4 class="flex-shrink-0 pr-4 text-sm leading-5 tracking-wider font-semibold uppercase text-blue-600">
+								For Technical Support
+							</h4>
+						<div class="flex-1 border-t-2 border-gray-200"></div>
+						</div>
+						<div class="mt-4 text-sm text-gray-400">
+							<?= the_field('support','options') ?>
+						</div>
+					<?php endif; ?>
 	              </div>
 	            </div>
 	          </div>
