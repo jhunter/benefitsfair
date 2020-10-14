@@ -132,6 +132,9 @@ gulp.task( 'styles', () => {
 	      tailwindcss( './tailwind.config.js' ),
 	      purgecss({
                 content: ["**/*.php"],
+				options: {
+					whitelist: ['underline', 'hover:no-underline'],
+				},
                 defaultExtractor: content =>
                   content.match(/[\w-/:]+(?<!:)/g) || []
               }),
