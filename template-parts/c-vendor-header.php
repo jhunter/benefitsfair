@@ -136,7 +136,7 @@
 
                   <div class="truncate">
                     <div class="flex items-baseline space-x-3">
-                      <h3 class="text-gray-900 text-lg leading-5 font-medium truncate">
+                      <h3 class="text-gray-900 text-lg font-medium truncate">
                         <?php
                           if(get_field('contact_name'))
                           {
@@ -148,9 +148,9 @@
                         ?></h3>
                     </div>
                     <?php if(get_field('contact_name') ){?>
-                    <p class="mt-1 text-gray-500 text-sm leading-5 truncate">Ask me a question!</p>
+                    <p class="mt-1 text-gray-500 text-sm truncate">Ask me a question!</p>
                   <?php }else{ ?>
-                    <p class="mt-1 text-gray-500 text-sm leading-5 truncate">Ask a question!</p>
+                    <p class="mt-1 text-gray-500 text-sm truncate">Ask a question!</p>
                     <?php } ?>
                   </div>
                   <div>
