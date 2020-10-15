@@ -40,3 +40,7 @@
   margin: 0;
   font-size: 0;
 }
+
+.nf-field-element textarea {
+  max-height: 6rem;
+}
