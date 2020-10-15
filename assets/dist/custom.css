@@ -34,3 +34,9 @@
     }
   }
 }
+
+#nf-field-16-container {
+  display: none!important;
+  margin: 0;
+  font-size: 0;
+}
